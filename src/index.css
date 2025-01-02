@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @keyframes zoom-in {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.animate-zoom-in {
+  animation: zoom-in 20s infinite;
+}
+
+@keyframes zoom-out {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
+
+.animate-zoom-out {
+  animation: zoom-out 20s infinite;
+} */
+
+@keyframes zoom-in-out {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* Zoom in */
+  }
+  100% {
+    transform: scale(1); /* Zoom out */
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0.5;
+    transform: scale(0.9);
+    /* transform: translateY(20px); */
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    /* transform: translateY(0); */
+  }
+}
+
+@keyframes fade-in-down {
+  from {
+    opacity: 1;
+    transform: scale(1);
+    /* transform: translateY(20px); */
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.9);
+    /* transform: translateY(0); */
+  }
+}
+
+  @keyframes only-fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes opacity-change {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.animate-zoom-in-out {
+  animation: zoom-in-out 20s ease-out; /* Duração de 8s, repetição infinita */
+}
+
+.fade-in-up {
+  animation: fade-in-up 1.2s ease-out forwards;
+}
+
+.fade-in-down {
+  animation: fade-in-up 2s ease-out forwards;
+}
+
+.only-fade-in-up {
+  animation: only-fade-in-up 1s ease-out forwards;
+}
+
+.animate-opacity-change {
+  animation: opacity-change 1s ease-out;
+}
