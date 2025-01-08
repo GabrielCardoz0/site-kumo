@@ -29,11 +29,11 @@ function Header() {
 
       <ul className="hidden md:flex gap-8 uppercase text-sm">
         <li className="hover:underline"><Link to="/home">Home</Link></li>
-        <li className="hover:underline"><Link to="/sobre">Sobre</Link></li>
+        <li className="hover:underline"><Link to="/site-profissional">Site profissional</Link></li>
         <li className="hover:underline"><Link to="/servicos">Serviços</Link></li>
         <li className="hover:underline"><Link to="/contato">Contato</Link></li>
+        <li className="hover:underline"><Link to="/sobre">Sobre</Link></li>
         <li className="hover:underline"><Link to="/faq">FAQ</Link></li>
-        <li className="hover:underline"><Link to="/site-barato">Site barato</Link></li>
       </ul>
     </div>
   );

@@ -4,6 +4,7 @@ import Banner from "./Banner";
 import { servicesList } from "../data";
 import footerImage from "../assets/banner_footer.jpg";
 import { Link } from "react-router-dom";
+import { redirectToInstagram, redirectToWhatsapp } from "../utils";
 
 export default 
 function Footer() {
@@ -23,11 +24,11 @@ function Footer() {
 
             <ul style={{ listStyle: "initial" }}>
               <li className="underline"><Link to="/home">Home</Link></li>
-              <li className="underline"><Link to="/sobre">Sobre</Link></li>
+              <li className="underline"><Link to="/site-profissional">Site profissional</Link></li>
               <li className="underline"><Link to="/servicos">Serviços</Link></li>
               <li className="underline"><Link to="/contato">Contato</Link></li>
+              <li className="underline"><Link to="/sobre">Sobre</Link></li>
               <li className="underline"><Link to="/faq">FAQ</Link></li>
-              <li className="underline"><Link to="/site-barato">Site por 1.199</Link></li>
             </ul>
           </div>
 
@@ -49,13 +50,13 @@ function Footer() {
             <Line />
 
             <ul style={{ listStyle: "initial" }}>
-              <li>(11) 99467-8867</li>
+              <li className="cursor-pointer underline" onClick={() => redirectToWhatsapp()}>(11) 98944-2271</li>
               <li>contato@kumotecnologia.com</li>
               <li>
                 Redes sociais
                 <ol>
-                  <li className="flex gap-2 items-center"> <FaInstagram /> @kumotecnologia</li>
-                  <li className="flex gap-2 items-center"> <FaFacebook /> kumo tecnologia</li>
+                  <li onClick={redirectToInstagram} className="flex gap-2 items-center cursor-pointer"> <FaInstagram /> @kumotecnologia</li>
+                  {/* <li className="flex gap-2 items-center"> <FaFacebook /> kumo tecnologia</li> */}
                 </ol>
               </li>
             </ul>

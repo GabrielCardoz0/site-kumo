@@ -1,5 +1,6 @@
 import { FaTimes } from 'react-icons/fa';
 import logo from '../assets/logo192.png';
+import { Link } from 'react-router-dom';
 
 export default function Sidebar({ handleClose }) {
   return (
@@ -11,12 +12,12 @@ export default function Sidebar({ handleClose }) {
           </div>
 
           <div className='w-full gap-4 flex flex-col text-gray-700 font-medium'>
-            <a onClick={handleClose} className="underline" href="/home">Home</a>
-            <a onClick={handleClose} className="underline" href="/sobre">Sobre</a>
-            <a onClick={handleClose} className="underline" href="/servicos">Serviços</a>
-            <a onClick={handleClose} className="underline" href="/contato">Contato</a>
-            <a onClick={handleClose} className="underline" href="/faq">FAQ</a>
-            <a onClick={handleClose} className="underline" href="/site-barato">Site por 1.199</a>
+            <Link onClick={handleClose} className="underline" to="/home">Home</Link>
+            <Link onClick={handleClose} className="underline" to="/site-profissional">Site profissional</Link>
+            <Link onClick={handleClose} className="underline" to="/servicos">Serviços</Link>
+            <Link onClick={handleClose} className="underline" to="/contato">Contato</Link>
+            <Link onClick={handleClose} className="underline" to="/sobre">Sobre</Link>
+            <Link onClick={handleClose} className="underline" to="/faq">FAQ</Link>
           </div>
 
           <div className="text-gray-900 text-xs self-end py-4 absolute bottom-0 left-0 text-center">

@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import FAQ from "./pages/FAQ";
 import Site399 from "./pages/Site399";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
@@ -19,11 +20,12 @@ function App() {
           <Route path="contato" element={<Contact/>} />
           <Route path="servicos" element={<Services/>} />
           <Route path="faq" element={<FAQ/>} />
-          <Route path="site-barato" element={<Site399/>} />
+          <Route path="site-profissional" element={<Site399/>} />
           <Route path="*" element={<Home />} />
         </Routes>
         <Footer />
       </Router>
+      <ToastContainer />
     </>
   );
 }

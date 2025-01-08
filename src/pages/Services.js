@@ -36,7 +36,7 @@ function ServiceItem({ img_url, title, largeDescription}) {
   return (
     <div className="flex gap-12 items-center py-8 border-b-[1px] flex-col md:flex-row ">
 
-      <ImageHover url={img_url} className={"cursor-pointer h-44 w-[400px] rounded-none"} />
+      <ImageHover style={{ width: "400px", height: "176px" }} url={img_url} className={"cursor-pointer rounded-none"} />
 
       <div className="flex flex-col gap-4"> 
         <h1 className="text-gray-700 font-medium text-xl md:text-2xl">{title}</h1>

@@ -5,7 +5,7 @@ export default function ServiceItem({ img_url, title, description }) {
 
   return (
     <div className="bg-white rounded-md md:w-[350px] flex flex-col gap-4 md:h-[450px] items-center relative">
-      <ImageHover url={img_url} className={"rounded-none cursor-pointer h-40 md:h-[180px] w-full rounded-t-md"} />
+      <ImageHover url={img_url} style={{ height: "160px" }} className={"rounded-none cursor-pointer h-40 md:h-[180px] w-full rounded-t-md"} />
       
       <p className="text-gray-700 font-medium text-xl md:text-2xl text-center">{title}</p>
 

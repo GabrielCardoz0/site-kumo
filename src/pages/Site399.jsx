@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import site399img from "../assets/site399.png";
 import Button from "../components/Button";
+import { redirectToWhatsapp } from "../utils";
 
 const steps = [
   {
@@ -47,7 +48,7 @@ export default function Site399() {
       </div>
       
       <div className="my-12 flex flex-col items-center gap-8 max-w-6xl px-8 md:px-0">
-        <h1 className="text-2xl font-medium text-center">Criação de site profissional barato com benefícios exclusivos feitos para você economizar.</h1>
+        <h1 className="text-2xl font-medium text-center">Criação de site profissional com benefícios exclusivos feitos para você economizar.</h1>
 
         <div className="flex gap-4 md:gap-12 md:flex-row flex-col">
           <ul className="list-disc md:text-lg flex flex-col gap-4">
@@ -74,7 +75,7 @@ export default function Site399() {
 
       <div className="py-8">
         <Button
-          onClick={() => window.open('https://wa.me/5511994703386?text=Olá, eu gostaria de um site profissional!', '_blank')}
+          onClick={() => redirectToWhatsapp("Olá, eu gostaria de um site profissional!")}
         >Contrate agora!</Button>
       </div>
 
@@ -100,7 +101,7 @@ function Design(params) {
     <div className="w-full flex flex-col justify-center items-center px-10 gap-8">
 
       <h1 className="text-5xl md:text-7xl font-semibold text-white text-center">
-        Criação de site profissional barato
+        Criação de site profissional
       </h1>
 
       <div className="flex text-white gap-1">
